@@ -3,18 +3,18 @@
 
 #include <Arduino.h>
 
-class Button
+class pButton
 {
 public:
-    Button(int pin, bool activeHigh = true);
+    pButton(int pin, bool activeHigh = true);
 
     void update();
 
     // Callbacks for different button events
-    void onClick(void (*callback)());
-    void onLongClick(void (*callback)());
-    void onDoubleClick(void (*callback)());
-    void onTripleClick(void (*callback)());
+    void click(void (*callback)());
+    void longClick(void (*callback)());
+    void doubleClick(void (*callback)());
+    void tripleClick(void (*callback)());
 
 private:
     int buttonPin;

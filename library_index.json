@@ -2,15 +2,15 @@
 	"name": "pButton",
 	"version": "1.0.0",
 	"keywords": "button",
-	"description": "Arduino/ESP Library to simplify working with buttons. It allows you to use callback functions to track single, double, triple and long clicks. Alternatively, it provides function to use in your main loop(). The library also takes care of debouncing. Using this lib will reduce and simplify your source code significantly.",
-	"homepage": "https://github.com/LennartHennigs/Button2",
+	"description": "Library that you can use buttons in your project easy and simplify.",
+	"homepage": "https://github.com/FitroxElectronics/pButton",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/LennartHennigs/Button2"
+		"url": "https://github.com/FitroxElectronics/pButton"
 	},
 	"authors": {
-		"name": "Lennart Hennigs",
-		"url": "https://lennarthennigs.de"
+		"name": "P. Bangtawee",
+		"url": "https://github.com/pbangtawee"
 	},
 	"frameworks": "arduino",
 	"platforms": "*"

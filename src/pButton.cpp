@@ -1,6 +1,6 @@
 #include "pButton.h"
 
-Button::Button(int pin, bool activeHigh)
+pButton::pButton(int pin, bool activeHigh)
 {
     buttonPin = pin;
     buttonState = activeHigh ? HIGH : LOW;
@@ -28,7 +28,7 @@ Button::Button(int pin, bool activeHigh)
     }
 }
 
-void Button::update()
+void pButton::update()
 {
     int reading = digitalRead(buttonPin);
 
@@ -99,22 +99,22 @@ void Button::update()
     lastButtonState = reading;
 }
 
-void Button::onClick(void (*callback)())
+void pButton::click(void (*callback)())
 {
     clickCallback = callback;
 }
 
-void Button::onLongClick(void (*callback)())
+void pButton::longClick(void (*callback)())
 {
     longClickCallback = callback;
 }
 
-void Button::onDoubleClick(void (*callback)())
+void pButton::doubleClick(void (*callback)())
 {
     doubleClickCallback = callback;
 }
 
-void Button::onTripleClick(void (*callback)())
+void pButton::tripleClick(void (*callback)())
 {
     tripleClickCallback = callback;
 }
